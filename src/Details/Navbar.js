@@ -1,0 +1,95 @@
+import React from "react";
+import { useState,useEffect } from "react";
+function RolesAnimation() {
+  const roles = ["UI/UX Developer", "Python Developer", "Database Expert", "Data Analyst","WEB DEVELOPER","PEGA SYSTEM ARCHITECT"];
+  const [text, setText] = useState("");
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = roles[roleIndex];
+    const typingSpeed = isDeleting ? 50 : 100;
+
+    const timeout = setTimeout(() => {
+      setText((prev) =>
+        isDeleting
+          ? currentRole.substring(0, prev.length - 1)
+          : currentRole.substring(0, prev.length + 1)
+      );
+
+      // When typing finished
+      if (!isDeleting && text === currentRole) {
+        setTimeout(() => setIsDeleting(true), 1000);
+      }
+
+      // When deleting finished
+      if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, roleIndex, roles]);
+
+  return (
+    <span className="typing-text">
+      {text}
+      <span className="cursor">|</span>
+    </span>
+  );
+}
+
+
+function Navbar(){
+    return(
+        <>
+            <nav className="navbar navbar-expand-lg">
+                <div className="container">
+                    <a className="navbar-brand text-decoration-none fs-2" href="#">Dinesh Kumar</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav gap-5 mb-2 mb-lg-0 d-flex ms-auto">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">About</a>
+                            </li>                            
+                            <li className="nav-item">
+                                <a className="nav-link">Resume</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link">Project</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section className="container d-flex pt-5" id="Home">
+                <div className="w-50">
+                    <p className="secondary-text">HELLO !</p>
+                    <h2 className="fs-1"><span className="primary-text">I'M </span><span className="secondary-text"> Dinesh Kumar</span></h2>
+                    <div>
+                        <span className="primary-text mt-2 fs-3"><RolesAnimation/></span>
+                    </div>
+                    <p style={{color: "rgb(158 158 158)" }}>
+                        Hi. My name is Dinesh, a software developer with a Passion for Developing Creative Applications. I have experience with both frontend & backend technologies. I also have an eye for UI/UX design.
+                    </p>
+                    <div>
+                        <a href="/Dharmavarapu_Dinesh_kumar.pdf" download target="_blank" rel="noreferrer" className="btn resume fw-bold">View Resume</a>
+                    </div>
+                </div>
+                <div className="w-50">
+                    <p>hello</p>
+                </div>
+            </section>
+        </>
+    )
+}
+export default Navbar
