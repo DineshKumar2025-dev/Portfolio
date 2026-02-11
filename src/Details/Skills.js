@@ -77,7 +77,22 @@ function Skills() {
                             </ul>
                         </div>
                     </div>
-                    <div className="tab-pane fade" id="nav-tools" role="tabpanel" aria-labelledby="nav-tools-tab"><p className="primary-text">c</p></div>
+                    <div className="tab-pane fade" id="nav-tools" role="tabpanel" aria-labelledby="nav-tools-tab">
+                        <div className="container">
+                            <ul className="skill-box d-flex flex-wrap gap-5">
+                                <li>
+                                    <div className="skill-card">
+                                        <img src="Attachments/images/mysql-3.svg" alt="SQL" className="img-fluid"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="skill-card">
+                                        <img src="Attachments/images/postgresql.svg" alt="PG-SQL" className="img-fluid"/>
+                                    </div>
+                                </li>                              
+                            </ul>
+                        </div>
+                    </div>
                     <div className="tab-pane fade" id="nav-Lybraries" role="tabpanel" aria-labelledby="nav-lybraries-tab"><p className="primary-text">d</p></div>
                 </div>
             </div>
