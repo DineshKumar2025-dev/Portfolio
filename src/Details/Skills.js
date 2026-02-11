@@ -50,34 +50,33 @@ function Skills() {
 
                                 <li>
                                     <div className="skill-card">
-                                        <img src="Attachments/images/html5-plain.svg" alt="HTML5" className="img-fluid"/>
+                                        <img src="Attachments/images/react-original-wordmark.svg" alt="React" className="img-fluid"/>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="skill-card">
-                                        <img src="Attachments/images/html5-plain.svg" alt="HTML5" className="img-fluid"/>
+                                        <img src="Attachments/images/javascript-plain.svg" alt="JS" className="img-fluid"/>
                                     </div>
-                                </li>
-                                <li>
-                                    <div className="skill-card">
-                                        <img src="Attachments/images/html5-plain.svg" alt="HTML5" className="img-fluid"/>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="skill-card">
-                                        <img src="Attachments/images/html5-plain.svg" alt="HTML5" className="img-fluid"/>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="skill-card">
-                                        <img src="Attachments/images/html5-plain.svg" alt="HTML5" className="img-fluid"/>
-                                    </div>
-                                </li>
-
+                                </li>                                
                             </ul>
                         </div>
                     </div>
-                    <div className="tab-pane fade" id="nav-Data" role="tabpanel" aria-labelledby="nav-Data-tab"><p className="primary-text">b</p></div>
+                    <div className="tab-pane fade" id="nav-Data" role="tabpanel" aria-labelledby="nav-Data-tab">
+                        <div className="container">
+                            <ul className="skill-box d-flex flex-wrap gap-5">
+                                <li>
+                                    <div className="skill-card">
+                                        <img src="Attachments/images/mysql-3.svg" alt="SQL" className="img-fluid"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="skill-card">
+                                        <img src="Attachments/images/postgresql.svg" alt="PG-SQL" className="img-fluid"/>
+                                    </div>
+                                </li>                              
+                            </ul>
+                        </div>
+                    </div>
                     <div className="tab-pane fade" id="nav-tools" role="tabpanel" aria-labelledby="nav-tools-tab"><p className="primary-text">c</p></div>
                     <div className="tab-pane fade" id="nav-Lybraries" role="tabpanel" aria-labelledby="nav-lybraries-tab"><p className="primary-text">d</p></div>
                 </div>
