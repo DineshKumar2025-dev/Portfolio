@@ -1,4 +1,19 @@
+import { useState } from "react";
+const Amerind = [
+    "Collaborated closely with backend developers and business stakeholders to build interactive, accessible, and user-focused web applications using React, Bootstrap 5, SCSS, and CFML.",
+    "Handled and resolved tickets raised by Quality Assurance teams and clients, ensuring smooth product functionality and timely issue resolution.",
+    "Ensured the entire application was cross-browser compatible, fully responsive, and delivered a seamless user experience across all devices and browsers.",
+    "Conducted knowledge transfer sessions on WCAG accessibility tools and standards, enabling faster and more effective quality analysis while improving overall client outcomes.",
+    "Developed and maintained reusable UI components and styling frameworks using React and SCSS, improving code maintainability and performance."
+    ];
+const Vedya =[
+    "Collaborated with cross-functional teams to identify common functionalities and reusable styles using PHP, CSS, and jQuery, enabling efficient and scalable application development.",
+    "Identified recurring issues, troubleshot root causes, and implemented fixes using AJAX-driven solutions, reducing redundancy and improving overall system reliability and performance.",
+    "Led migration and enhancement activities for the merchandising dashboard, handling data integration, backend processing in PHP, and front-end feature improvements to deliver a more robust and user-friendly system.",
+    ];
 function Resume(){
+    const [Amerindsolutions,AmerindSkills]=useState(Amerind); 
+    const [Vedyasolutions,VedyaSkills]=useState(Vedya); 
     return(
         <>
             <section id="resume-section">
@@ -15,55 +30,59 @@ function Resume(){
                         <div className="underline"></div>
                     </div>		
                     <div className="row pb-5">
-                        <div className="col-md-6 p-2">
-                            <div className="card bg-transparent p-2">
+                        <div className="col-md-6 p-2 d-flex">
+                            <div className="card bg-transparent p-2 h-100">
                                 <span className="secondary-text fw-bold">2024 - Present</span>
                                 <h2 className="primary-text">Junior web-developer</h2>
-                                <span className="info-text">AmerinD Data Solutions</span>
-                                <p className="mt-4 info-text">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+                                <span className="info-text">Amerind Data Solutions</span>
+                                <p className="mt-4 info-text">“Amerind Data Solutions is an EHS-based company that collaborates with many universities, laboratory professionals, and insurance data providers.”
                                     <ul>
-                                        <li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
-                                        <li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
-                                        <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+                                       {Amerindsolutions.map((skill, index) => (
+                                            <li key={index}>
+                                                {skill}
+                                            </li>
+                                        ))} 
                                     </ul>
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-6 p-2">
-                            <div className="card bg-transparent p-2">
+                        <div className="col-md-6 p-2 d-flex">
+                            <div className="card bg-transparent p-2 h-100">
                                 <span className="secondary-text fw-bold">2024</span>
                                 <h2 className="primary-text">PHP Developer</h2>
                                 <span className="info-text">Vedya infotech</span>
-                                <p className="mt-4 info-text">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+                                <p className="mt-4 info-text">Vedya Infotech is a service-based organization specializing in delivering tailored application development and support services to meet diverse client requirements. 
                                     <ul>
-                                        <li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
-                                        <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-                                        <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+                                        {Vedyasolutions.map((skill, index) => (
+                                            <li key={index}>
+                                                {skill}
+                                            </li>
+                                        ))} 
                                     </ul>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row pt-5">
                         <h1 className="primary-text text-center fw-bold">Education</h1>
                         <div className="underline"></div>
                     </div>		
                     <div className="row">
                         <div className="col-md-6 p-2">
                             <div className="card bg-transparent p-2">
-                                <span className="secondary-text fw-bold">2014-2018</span>
+                                <span className="secondary-text fw-bold">2020-2024</span>
                                 <h2 className="primary-text">Bachelor of Engineering</h2>
-                                <span className="info-text">Visvesvaraya Technological University</span>
-                                <p className="info-text">Grade: First className distinction.</p>
+                                <span className="info-text">Avanthi institute of Engineering and technologie</span>
+                                <p className="info-text">Computer science and engineering – Data Science,</p>
                             </div>
                         </div>
 
                         <div className="col-md-6 p-2">
                             <div className="card bg-transparent p-2">
-                                <span className="secondary-text fw-bold">2012-2013</span>
+                                <span className="secondary-text fw-bold">2018-2020</span>
                                 <h2 className="primary-text">Higher Secondary School</h2>
-                                <span className="info-text">Army Public School</span>
-                                <p className="info-text">Grade: First className distinction.</p>
+                                <span className="info-text">Narayana Junior Collage</span>
+                                <p className="info-text">MPC</p>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,10 @@
+import { Tooltip } from "bootstrap";
+import { useEffect } from "react";
 function Skills() {
+    useEffect(() => {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(el => new Tooltip(el));
+        }, []);
     return(
         <>
         <section className="container d-flex py-5" id="skills">
@@ -25,38 +31,38 @@ function Skills() {
                             <div className="container">
                                 <ul className="skill-box d-flex flex-wrap gap-5">
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML-5">
                                             <img src="Attachments/images/html5-plain.svg" alt="HTML5" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS-3">
                                             <img src="Attachments/images/css3-plain.svg" alt="CSS3" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Python">
                                             <img src="Attachments/images/python-2.svg" alt="python" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
                                             <img src="Attachments/images/new-php-logo.svg" alt="Php" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="J-Query">
                                             <img src="Attachments/images/jquery-svgrepo-com.svg" alt="j-query" className="img-fluid"/>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="React.JS">
                                             <img src="Attachments/images/react-original-wordmark.svg" alt="React" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
                                             <img src="Attachments/images/javascript-plain.svg" alt="JS" className="img-fluid"/>
                                         </div>
                                     </li>                                
@@ -67,12 +73,12 @@ function Skills() {
                             <div className="container">
                                 <ul className="skill-box d-flex flex-wrap gap-5">
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL">
                                             <img src="Attachments/images/mysql-3.svg" alt="SQL" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Poatgresql">
                                             <img src="Attachments/images/postgresql.svg" alt="PG-SQL" className="img-fluid"/>
                                         </div>
                                     </li>                              
@@ -83,32 +89,32 @@ function Skills() {
                             <div className="container">
                                 <ul className="skill-box d-flex flex-wrap gap-5">
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="PEGA">
                                             <img src="Attachments/images/pega.jpeg" alt="Pega" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="VS-Code">
                                             <img src="Attachments/images/Vs-code.svg" alt="vs-code" className="img-fluid"/>
                                         </div>
                                     </li>  
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Git">
                                             <img src="Attachments/images/git.svg" alt="git" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Git-Hub">
                                             <img src="Attachments/images/github-1.svg" alt="git-hub" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Sublime-Text">
                                             <img src="Attachments/images/sublime-text-icon.svg" alt="sublime" className="img-fluid"/>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Jupyter">
                                             <img src="Attachments/images/jupyter.svg" alt="jupyter" className="img-fluid"/>
                                         </div>
                                     </li>                              
@@ -119,22 +125,22 @@ function Skills() {
                             <div className="container">
                                 <ul className="skill-box d-flex flex-wrap gap-5">
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Numpy">
                                             <img src="Attachments/images/numpy-2.svg" alt="numpy" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="tailwindcss">
                                             <img src="Attachments/images/tailwindcss-plain.svg" alt="tilewind" className="img-fluid"/>
                                         </div>
                                     </li>  
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="BS-5">
                                             <img src="Attachments/images/bootstrap-5-logo-icon.svg" alt="bs5" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="SCSS">
                                             <img src="Attachments/images/scss.svg" alt="SCSS" className="img-fluid"/>
                                         </div>
                                     </li>                             
@@ -145,17 +151,17 @@ function Skills() {
                             <div className="container">
                                 <ul className="skill-box d-flex flex-wrap gap-5">
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Numpy">
                                             <img src="Attachments/images/numpy-2.svg" alt="numpy" className="img-fluid"/>
                                         </div>
                                     </li>
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Open-CV">
                                             <img src="Attachments/images/opencv-2.svg" alt="open-cv" className="img-fluid"/>
                                         </div>
                                     </li>  
                                     <li>
-                                        <div className="skill-card">
+                                        <div className="skill-card" data-bs-toggle="tooltip" data-bs-placement="top" title="Pandas">
                                             <img src="Attachments/images/pandas.svg" alt="pandas" className="img-fluid"/>
                                         </div>
                                     </li>                                                          

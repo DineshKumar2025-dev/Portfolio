@@ -3,7 +3,7 @@ $secondary-color:#ffbd39;
 $informative-text:rgb(158 158 158);
 .navbar{
     background: #0F172A;
-    z-index: 1000;
+    z-index: 2000;
     .navbar-brand{
         font-family:  Arial;
         color: $primary-color;
@@ -25,7 +25,7 @@ $informative-text:rgb(158 158 158);
 #Home{
     margin-top: 200px ;
 }
-#skills{
+#skills,#about{
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -78,6 +78,13 @@ $informative-text:rgb(158 158 158);
         transform: scale(1.05);
     }
 }
+
+.tooltip-inner {
+  color:$primary-color;
+  background-color: $secondary-color;
+  font-weight: bold;
+}
+
 .subtitle {
     position: absolute;
     top: 0;
@@ -87,6 +94,63 @@ $informative-text:rgb(158 158 158);
     transform-origin: left top;
     letter-spacing: 2px;
     color: $secondary-color;
+}
+.profile-img-wrapper {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.profile-img-wrapper {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+    animation: softGlow 3s ease-in-out infinite;
+}
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+@keyframes softGlow {
+  0% {
+    box-shadow:
+      0 0 25px rgba(lighten($secondary-color, 5%), 0.35),
+      0 0 50px rgba(lighten($secondary-color, 10%), 0.20);
+  }
+
+  50% {
+    box-shadow:
+      0 0 45px rgba(lighten($secondary-color, 8%), 0.55),
+      0 0 90px rgba(lighten($secondary-color, 15%), 0.30);
+  }
+
+  100% {
+    box-shadow:
+      0 0 25px rgba(lighten($secondary-color, 5%), 0.35),
+      0 0 50px rgba(lighten($secondary-color, 10%), 0.20);
+  }
 }
 .skill-box{    
     justify-content: center;
