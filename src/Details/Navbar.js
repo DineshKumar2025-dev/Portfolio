@@ -44,7 +44,7 @@ function RolesAnimation() {
 function Navbar(){
     return(
         <>
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-lg position-fixed top-0 w-100 shadow">
                 <div className="container">
                     <a className="navbar-brand text-decoration-none fs-2" href="#">Dinesh Kumar</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,8 +71,9 @@ function Navbar(){
                     </div>
                 </div>
             </nav>
-            <section className="container d-flex pt-5" id="Home">
-                <div className="w-50">
+            <section className="container d-flex" id="Home">
+                <div className="row">
+                <div className="col-12 col-lg-6 box">
                     <p className="secondary-text">HELLO !</p>
                     <h2 className="fs-1"><span className="primary-text">I'M </span><span className="secondary-text"> Dinesh Kumar</span></h2>
                     <div>
@@ -85,8 +86,9 @@ function Navbar(){
                         <a href="/Dharmavarapu_Dinesh_kumar.pdf" download target="_blank" rel="noreferrer" className="btn resume fw-bold">View Resume</a>
                     </div>
                 </div>
-                <div className="w-50">
-                    <p>hello</p>
+                <div className="col-12 col-lg-6 box">                  
+
+                </div>
                 </div>
             </section>
         </>
