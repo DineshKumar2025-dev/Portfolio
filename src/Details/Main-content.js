@@ -1,14 +1,16 @@
 import Skills from "./Skills";
 import Resume from "./Resume";
 import About from "./About";
+import Project from "./Projects";
 function Main(){
     return(
         <>
-        <div id="about">        
+        <section id="about">        
             <About/>
             <Skills/>
-        </div>
+        </section>
         <Resume/>
+        <Project/>
         </>
     )
 }

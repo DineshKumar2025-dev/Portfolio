@@ -25,7 +25,7 @@ $informative-text:rgb(158 158 158);
 #Home{
     margin-top: 200px ;
 }
-#skills,#about{
+#skills,#about,#projects{
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -39,7 +39,7 @@ $informative-text:rgb(158 158 158);
 .info-text{
     color: $informative-text;
 }
-.resume{
+.resume,.dd-info{
     border: 2px solid $secondary-color;
     border-radius: 10px;
     color: $primary-color;
@@ -49,6 +49,25 @@ $informative-text:rgb(158 158 158);
         color: $secondary-color;
         background-color: $primary-color;
     }
+}
+.dd-strong{
+    color: #0F172A;
+    background-color: $secondary-color;
+    border: 2px solid $secondary-color;
+    border-radius: 10px;
+    font-weight: bold;
+    &:hover{
+        color: $primary-color;
+        background-color: darken($secondary-color, 2%);
+    }
+}
+.dd-strong-text{
+    color: #0F172A;
+    background-color: $secondary-color;
+    border: 2px solid $secondary-color;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0px 10px;
 }
 .skills-toggle {
     background: #303030;
@@ -133,6 +152,25 @@ $informative-text:rgb(158 158 158);
     position: relative;
     z-index: 2;
 }
+.img-wrapper {
+    width: 100%;
+    background-color: transparent;
+}
+
+.project-img {
+    max-width: 70%;   /* makes image smaller */
+    height: auto;
+    object-fit: contain;
+    animation: softGlow 3s ease-in-out infinite;
+}
+.check{
+    width: 30px;
+    height: 30px;
+}
+.project{
+    margin:150px 0px
+}
+
 @keyframes softGlow {
   0% {
     box-shadow:
