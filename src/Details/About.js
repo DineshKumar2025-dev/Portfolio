@@ -1,7 +1,7 @@
 function About(){
     return(
         <>
-        <div className="container">
+        <section className="container" >
             <div className="row">
                 <div className="col-md-6 d-flex justify-content-center align-items-start ">
                     <div className="profile-img-wrapper">
@@ -24,7 +24,7 @@ function About(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         </>
     )
 }

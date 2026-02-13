@@ -88,7 +88,7 @@ function Resume(){
                     </div>
                     <div className="row justify-content-center mt-5">
                         <div className="col-md-6 text-center ftco-animate">
-                            <p><a href="geetharesume.pdf" download="resume.pdf"  className="btn resume fw-bold">Download CV</a></p>
+                            <p><a href="Attachments/Dharmavarapu_Dinesh_kumar.pdf" target="_blank" rel="noopener noreferrer"className="btn resume fw-bold">  View Resume</a></p>
                         </div>
                     </div>
                 </div>
