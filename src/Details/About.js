@@ -1,7 +1,7 @@
 function About(){
     return(
         <>
-        <section className="container">
+        <section className="container" >
             <div className="row">
                 <div className="col-md-6 d-flex justify-content-center align-items-start ">
                     <div className="profile-img-wrapper">

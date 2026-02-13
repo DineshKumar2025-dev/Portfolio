@@ -5,7 +5,7 @@ $informative-text:rgb(158 158 158);
     background: #0F172A;
     z-index: 2000;
     .navbar-brand{
-        font-family:  Arial;
+        font-family: 'Saira Stencil One';
         color: $primary-color;
         :hover{
             color:$secondary-color
@@ -23,13 +23,12 @@ $informative-text:rgb(158 158 158);
     }
 }
 #Home{
-    margin-top: 200px ;
+    padding-top: 200px ;
 }
-#skills,#about,#projects{
+#skills,#about,#projects,#resume-section,#contact-section{
+    padding-top: 100px;
     margin-top: 150px;
-    margin-bottom: 150px;
 }
-
 .primary-text{
     color: $primary-color;
 }
@@ -170,6 +169,17 @@ $informative-text:rgb(158 158 158);
 .project{
     margin:150px 0px
 }
+.icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: $secondary-color;
+    img{
+        width: 30px;
+        height: 30px;    
+    }
+}
 
 @keyframes softGlow {
   0% {
@@ -233,3 +243,84 @@ $informative-text:rgb(158 158 158);
     position: relative;
     z-index: 1000;
 }
+.contact {    
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+    form {
+        background-color: #1E293B;  // Slightly lighter than body
+        border: 2px solid $secondary-color;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        transition: 0.3s ease;
+        label {
+            color: $primary-color;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: #0F172A;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            color: $primary-color;
+            outline: none;
+            transition: 0.3s ease;
+            margin-bottom: 20px;
+            &::placeholder {
+                color: #94A3B8;
+            }
+            &:focus {
+                border-color: $secondary-color;
+                box-shadow: 0 0 8px rgba(255, 189, 57, 0.5);
+            }
+        }
+    }
+}
+footer{
+    margin-top: 100px;
+    font-family: 'Saira Stencil One';
+}
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(0,150,255,0.4) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: -1;
+  animation: glowMove 4s ease-in-out infinite;
+}
+
+@keyframes glowMove {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+.animate-img {
+  width: 80%;
+  max-width: 400px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+

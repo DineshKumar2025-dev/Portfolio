@@ -2,6 +2,7 @@ import Skills from "./Skills";
 import Resume from "./Resume";
 import About from "./About";
 import Project from "./Projects";
+import Contact from "./Contact"
 function Main(){
     return(
         <>
@@ -11,6 +12,7 @@ function Main(){
         </section>
         <Resume/>
         <Project/>
+        <Contact/>
         </>
     )
 }

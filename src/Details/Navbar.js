@@ -1,4 +1,5 @@
 import React from "react";
+import "@fontsource/saira-stencil-one";
 import { useState,useEffect } from "react";
 function RolesAnimation() {
   const roles = ["UI/UX Developer", "Python Developer", "Database Expert", "Data Analyst","WEB DEVELOPER","PEGA SYSTEM ARCHITECT"];
@@ -42,6 +43,37 @@ function RolesAnimation() {
 
 
 function Navbar(){
+    const [activeSection, setActiveSection] = useState("Home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "Home",
+        "about",
+        "resume-section",
+        "projects",
+        "contact-section"
+      ];
+
+      let current = "";
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const sectionTop = element.offsetTop - 100;
+          if (window.scrollY >= sectionTop) {
+            current = section;
+          }
+        }
+      });
+
+      setActiveSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
     return(
         <>
             <nav className="navbar navbar-expand-lg position-fixed top-0 w-100 shadow">
@@ -51,23 +83,39 @@ function Navbar(){
                     <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav gap-5 mb-2 mb-lg-0 d-flex ms-auto">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
-                            </li>                            
-                            <li className="nav-item">
-                                <a className="nav-link">Resume</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link">Project</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link">Contact</a>
-                            </li>
-                        </ul>
+                         <ul className="navbar-nav gap-5 mb-2 mb-lg-0 d-flex ms-auto">
+        
+        <li className="nav-item">
+          <a className={`nav-link ${activeSection === "Home" ? "active" : ""}`} href="#Home">
+            Home
+          </a>
+        </li>
+
+        <li className="nav-item">
+          <a className={`nav-link ${activeSection === "about" ? "active" : ""}`} href="#about">
+            About
+          </a>
+        </li>
+
+        <li className="nav-item">
+          <a className={`nav-link ${activeSection === "resume-section" ? "active" : ""}`} href="#resume-section">
+            Resume
+          </a>
+        </li>
+
+        <li className="nav-item">
+          <a className={`nav-link ${activeSection === "projects" ? "active" : ""}`} href="#projects">
+            Project
+          </a>
+        </li>
+
+        <li className="nav-item">
+          <a className={`nav-link ${activeSection === "contact-section" ? "active" : ""}`} href="#contact-section">
+            Contact
+          </a>
+        </li>
+
+      </ul>
                     </div>
                 </div>
             </nav>
@@ -83,11 +131,17 @@ function Navbar(){
                         Hi. My name is Dinesh, a software developer with a Passion for Developing Creative Applications. I have experience with both frontend & backend technologies. I also have an eye for UI/UX design.
                     </p>
                     <div>
-                        <a href="/Dharmavarapu_Dinesh_kumar.pdf" download target="_blank" rel="noreferrer" className="btn resume fw-bold">View Resume</a>
+                        <a href="Attachments/Dharmavarapu_Dinesh_kumar.pdf" target="_blank" rel="noopener noreferrer"className="btn resume fw-bold">  View Resume</a>
                     </div>
                 </div>
-                <div className="col-12 col-lg-6 box">                  
-
+                <div className="col-d-none col-lg-6 box">
+                  <div className="image-wrapper d-flex justify-content-center">
+                    <img 
+                      src="Attachments/images/laptop.png" 
+                      alt="animate" 
+                      className="animate-img"
+                    />
+                  </div>
                 </div>
                 </div>
             </section>
