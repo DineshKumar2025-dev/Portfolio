@@ -49,7 +49,7 @@ function SendMessage(e) {
                     <div className="p-4 text-center">
                         <div className="d-flex justify-content-center">
                             <div className="icon d-flex align-items-center justify-content-center">
-                                <img src="Attachments/images/telephone.svg"></img>
+                                <img src="Attachments/images/telephone.svg" alt="teliphone"></img>
                             </div>
                         </div>
                         <h3 className="mb-4 primary-text">Contact Number</h3>
@@ -60,7 +60,7 @@ function SendMessage(e) {
                     <div className="p-4 text-center">
                         <div className="d-flex justify-content-center">
                             <div className="icon d-flex align-items-center justify-content-center">
-                                <img src="Attachments/images/envelope.svg"></img>
+                                <img src="Attachments/images/envelope.svg" alt="email"></img>
                             </div>
                         </div>
                         <h3 className="mb-4 primary-text">Email Address</h3>
@@ -71,7 +71,7 @@ function SendMessage(e) {
                     <div className="p-4 text-center">
                         <div className="d-flex justify-content-center">
                             <div className="icon d-flex align-items-center justify-content-center">
-                            <img src="Attachments/images/globe.svg"></img>
+                            <img src="Attachments/images/globe.svg" alt="resume"></img>
                         </div>
                         </div>                    
                         <h3 className="mb-4 primary-text">Download Resume</h3>
@@ -95,7 +95,7 @@ function SendMessage(e) {
                             <div className="">
                                 <div >
                                     <div className="icon d-flex align-items-center justify-content-center">
-                                        <img src="Attachments/images/envelope.svg"></img>
+                                        <img src="Attachments/images/envelope.svg" alt="email"></img>
                                     </div>
                                 </div>
                                 <h3 className="primary-text">Email Address</h3>
@@ -104,13 +104,13 @@ function SendMessage(e) {
                             <div className="">
                                 <div >
                                     <div className="icon d-flex align-items-center justify-content-center">
-                                        <img src="Attachments/images/envelope.svg"></img>
+                                        <img src="Attachments/images/envelope.svg" alt="social"></img>
                                     </div>
                                 </div>
                                 <h3 className="primary-text">Socials</h3>
                                 <div className="d-flex gap-1">
-                                    <a href="https://github.com/DineshKumar2025-dev?tab=repositories" target="_blank"><img src="Attachments/images/github-icon.svg" alt="github"></img></a>
-                                    <a href="https://www.linkedin.com/in/dinesh-kumar-aa1849240" target="_blank"><img src="Attachments/images/linkedin-icon.svg" alt="linkedin"></img></a>
+                                    <a href="https://github.com/DineshKumar2025-dev?tab=repositories" target="_blank" rel="noreferrer"><img src="Attachments/images/github-icon.svg" alt="github"></img></a>
+                                    <a href="https://www.linkedin.com/in/dinesh-kumar-aa1849240" target="_blank" rel="noreferrer"><img src="Attachments/images/linkedin-icon.svg" alt="linkedin"></img></a>
                                 </div>                                
                             </div>
                         </div>    

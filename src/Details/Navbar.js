@@ -1,9 +1,16 @@
 import React from "react";
 import "@fontsource/saira-stencil-one";
-import { useState,useEffect } from "react";
-import { Collapse } from "bootstrap";
+import { useState,useEffect,useMemo } from "react";
 function RolesAnimation() {
-  const roles = ["UI/UX Developer", "Python Developer", "Database Expert", "Data Analyst","WEB DEVELOPER","PEGA SYSTEM ARCHITECT"];
+  const roles = useMemo(() => [
+  "UI/UX Developer",
+  "Python Developer",
+  "Database Expert",
+  "Data Analyst",
+  "WEB DEVELOPER",
+  "PEGA SYSTEM ARCHITECT"
+], []);
+
   const [text, setText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -79,7 +86,7 @@ function Navbar(){
         <>
             <nav className="navbar navbar-expand-lg position-fixed top-0 w-100 shadow">
                 <div className="container">
-                    <a className="navbar-brand text-decoration-none fs-2" href="#">Dinesh Kumar</a>
+                    <a className="navbar-brand text-decoration-none fs-2" href="#Home">Dinesh Kumar</a>
                     
                     <div className="collapse navbar-collapse" id="navbarSupportedContent" data-bs-parent="">
                          <ul className="navbar-nav gap-5 mb-2 mb-lg-0 d-flex ms-auto">
