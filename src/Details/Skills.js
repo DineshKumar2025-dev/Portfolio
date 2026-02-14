@@ -15,13 +15,12 @@ function Skills() {
                         <h3>WHAT MY<br/>PROGRAMMING SKILLS <br/>INCLUDED? </h3>
                         <p style={{color: "rgb(158 158 158)" }}>With expertise in frontend development, backend development, multiple databases, I possess a diverse range of skills that enable me to create applications that deliver an exceptional user experience while maintaining robust and reliable performance.</p>
                     </div>
-                    <nav>
-                    <div className="mx-auto text-sm md:text-base font-bold skills-toggle font-poppins gap-1"id="nav-tab" role="tablist">
+                    <nav className="d-flex justify-content-center">
+                    <div className="font-bold skills-toggle font-poppins gap-1"id="nav-tab" role="tablist">
                         <button className="nav-link active" id="nav-tech-tab" data-bs-toggle="tab" data-bs-target="#nav-tech" type="button" role="tab" aria-controls="nav-tech" aria-selected="true">Tech</button>
                         <button className="nav-link" id="nav-Data-tab" data-bs-toggle="tab" data-bs-target="#nav-Data" type="button" role="tab" aria-controls="nav-Data" aria-selected="false">Data Base</button>
                         <button className="nav-link" id="nav-tools-tab" data-bs-toggle="tab" data-bs-target="#nav-tools" type="button" role="tab" aria-controls="nav-tools" aria-selected="false">Tools</button>
                         <button className="nav-link" id="nav-tools-tab" data-bs-toggle="tab" data-bs-target="#nav-AI" type="button" role="tab" aria-controls="nav-AI" aria-selected="false">AI</button>
-                        <button className="nav-link" id="nav-Lybraries-tab" data-bs-toggle="tab" data-bs-target="#nav-Lybraries" type="button" role="tab" aria-controls="nav-Lybraries" aria-selected="false">Lybraries & Frame works</button>
                     </div>
                     </nav>
                 </div>

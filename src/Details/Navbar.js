@@ -1,6 +1,7 @@
 import React from "react";
 import "@fontsource/saira-stencil-one";
 import { useState,useEffect } from "react";
+import { Collapse } from "bootstrap";
 function RolesAnimation() {
   const roles = ["UI/UX Developer", "Python Developer", "Database Expert", "Data Analyst","WEB DEVELOPER","PEGA SYSTEM ARCHITECT"];
   const [text, setText] = useState("");
@@ -79,43 +80,41 @@ function Navbar(){
             <nav className="navbar navbar-expand-lg position-fixed top-0 w-100 shadow">
                 <div className="container">
                     <a className="navbar-brand text-decoration-none fs-2" href="#">Dinesh Kumar</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent" data-bs-parent="">
                          <ul className="navbar-nav gap-5 mb-2 mb-lg-0 d-flex ms-auto">
         
-        <li className="nav-item">
-          <a className={`nav-link ${activeSection === "Home" ? "active" : ""}`} href="#Home">
-            Home
-          </a>
-        </li>
+                          <li className="nav-item">
+                            <a className={`nav-link ${activeSection === "Home" ? "active" : ""}`} href="#Home">
+                              Home
+                            </a>
+                          </li>
 
-        <li className="nav-item">
-          <a className={`nav-link ${activeSection === "about" ? "active" : ""}`} href="#about">
-            About
-          </a>
-        </li>
+                          <li className="nav-item">
+                            <a className={`nav-link ${activeSection === "about" ? "active" : ""}`} href="#about">
+                              About
+                            </a>
+                          </li>
 
-        <li className="nav-item">
-          <a className={`nav-link ${activeSection === "resume-section" ? "active" : ""}`} href="#resume-section">
-            Resume
-          </a>
-        </li>
+                          <li className="nav-item">
+                            <a className={`nav-link ${activeSection === "resume-section" ? "active" : ""}`} href="#resume-section">
+                              Resume
+                            </a>
+                          </li>
 
-        <li className="nav-item">
-          <a className={`nav-link ${activeSection === "projects" ? "active" : ""}`} href="#projects">
-            Project
-          </a>
-        </li>
+                          <li className="nav-item">
+                            <a className={`nav-link ${activeSection === "projects" ? "active" : ""}`} href="#projects">
+                              Project
+                            </a>
+                          </li>
 
-        <li className="nav-item">
-          <a className={`nav-link ${activeSection === "contact-section" ? "active" : ""}`} href="#contact-section">
-            Contact
-          </a>
-        </li>
+                          <li className="nav-item">
+                            <a className={`nav-link ${activeSection === "contact-section" ? "active" : ""}`} href="#contact-section">
+                              Contact
+                            </a>
+                          </li>
 
-      </ul>
+                        </ul>
                     </div>
                 </div>
             </nav>

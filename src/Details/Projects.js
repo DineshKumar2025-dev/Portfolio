@@ -78,8 +78,8 @@ function Project(){
                             </div>                            
                         </div>
                     </div>
-                    <div className="row flex-row-reverse project">
-                        <div className="col-md-6">
+                    <div className="row flex-row-reverse ">
+                        <div className="col-md-6 project">
                             <span className="dd-strong-text">web development</span>
                             <h2 className="primary-text mt-2">MOM Food <br></br>FOOD DELIVERY APP</h2>
                             <p className="info-text">
@@ -103,7 +103,7 @@ function Project(){
                                         <div className="">
                                             <img src="Attachments/images/checkmark-1.svg" alt="check" className="check"></img>
                                         </div>
-                                        <span className="font-rubik text-base tracking-wider text-white">J-Quary</span>
+                                        <span className="font-rubik text-base tracking-wider text-white">jQuery</span>
                                     </div>
                                 </div>
                                 <div className="col">
@@ -111,7 +111,7 @@ function Project(){
                                         <div className="">
                                             <img src="Attachments/images/checkmark-1.svg" alt="check" className="check"></img>
                                         </div>
-                                        <span className="font-rubik text-base tracking-wider text-white">PostgraySQL</span>
+                                        <span className="font-rubik text-base tracking-wider text-white">PostgreSQL</span>
                                     </div>
                                     <div className="d-flex gap-3">
                                         <div className="">
