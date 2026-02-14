@@ -29,6 +29,9 @@ $informative-text:rgb(158 158 158);
     padding-top: 100px;
     margin-top: 150px;
 }
+.about-me{
+    width: 75%;
+}
 .primary-text{
     color: $primary-color;
 }
@@ -71,7 +74,6 @@ $informative-text:rgb(158 158 158);
 .skills-toggle {
     background: #303030;
     width: max-content;
-    margin-inline: auto;
     display: flex;
     align-items: center;
     padding: 5px;
@@ -323,4 +325,33 @@ footer{
     transform: translateY(0px);
   }
 }
-
+@media (max-width: 576px) {
+    #Home{
+    padding-top: 90px ;
+}
+    #skills,#about,#projects,#resume-section,#contact-section{
+    padding-top: 50px;
+    margin-top: 50px;
+}
+  .subtitle {
+    position: static;
+    transform: none;
+    margin:0px;
+}
+#skills{
+    #nav-tab{
+        gap: 0px !important;
+    }
+}
+.project{
+    margin:50px 0px
+}
+.contact{
+    form{
+        margin-top: 20pX;
+    }
+}
+.about-me{
+    width: 100%;
+}
+}

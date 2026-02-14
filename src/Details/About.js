@@ -13,7 +13,7 @@ function About(){
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <div className="position-relative primary-text w-75">
+                    <div className="position-relative primary-text about-me">
                         <p className="subtitle">About me</p>
                         <h3>
                             Looking to build something truly extraordinary?
