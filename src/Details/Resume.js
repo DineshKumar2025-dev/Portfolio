@@ -12,8 +12,8 @@ const Vedya =[
     "Led migration and enhancement activities for the merchandising dashboard, handling data integration, backend processing in PHP, and front-end feature improvements to deliver a more robust and user-friendly system.",
     ];
 function Resume(){
-    const [Amerindsolutions,AmerindSkills]=useState(Amerind); 
-    const [Vedyasolutions,VedyaSkills]=useState(Vedya); 
+    const [Amerindsolutions]=useState(Amerind); 
+    const [Vedyasolutions]=useState(Vedya); 
     return(
         <>
             <section id="resume-section">
